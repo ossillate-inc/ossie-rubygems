@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "sossy/version"
+require "ossie/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "sossy"
-  spec.version       = Sossy::VERSION
+  spec.name          = "ossie"
+  spec.version       = Ossie::VERSION
   spec.authors       = ["Ashish Bijlani"]
   spec.email         = ["oss@ossillate.com"]
 
-  spec.summary       = %q{Sossy stops software supply chain attacks.}
-  spec.description   = %q{Sossy detects "risky" RubyGems packages in your software supply chain.}
-  spec.homepage      = "https://github.com/ossillate-inc/sossy-rubygems"
+  spec.summary       = %q{Ossie stops software supply chain attacks.}
+  spec.description   = %q{Ossie reports "risky" RubyGems packages in your software supply chain.}
+  spec.homepage      = "https://github.com/ossillate-inc/ossie-rubygems"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

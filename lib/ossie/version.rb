@@ -1,3 +1,3 @@
-module Sossy
+module Ossie
   VERSION = "0.0.0"
 end
